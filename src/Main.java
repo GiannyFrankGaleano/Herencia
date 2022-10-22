@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Bus primerBus = new Bus();
+        Bus primerBus = new Bus("XCD309",Marcas.CHEVROLET,150000.0);
 
         primerBus.setEmpresa(Empresa.BOLIVARIANO);
 
@@ -23,8 +23,9 @@ public class Main {
 
         System.out.println("---------------------------------------------------");
 
-        Camioneta primerCamioneta = new Camioneta();
+        Camioneta primerCamioneta = new Camioneta("XDD123",Marcas.FORD,80000.0);
         primerCamioneta.setMarca(Marcas.BENTLEY);
+        System.out.println();
         primerCamioneta.encender();
         primerCamioneta.acelerar();
         primerCamioneta.acelerar();
